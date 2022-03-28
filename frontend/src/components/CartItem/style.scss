@@ -1,0 +1,55 @@
+.cart {
+    &__item {
+        display: grid;
+        grid-template-columns: 40% 18% 18% 18% 6%;
+        margin-bottom: 25px;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+
+    &__image {
+        width: 150px;
+        height: 100px;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    &__price, &__total {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    &__total {
+        color: red;
+    }
+
+    &__quantily {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        font-size: 16px;
+        width: max-content;
+        margin: 0 auto;
+        padding: 18px 15px;
+        border: 1px solid rgb(211, 209, 209);
+        
+        span {
+            color: gray;
+            cursor: pointer;
+        }
+    }
+    &__delete {
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
